@@ -5,6 +5,7 @@ import "./src/config/db.js";
 import roleRouter from "./src/routes/roleRoute.js";
 import adminRouter from './src/routes/adminRoute.js';
 import userRouter from './src/routes/userRoute.js';
+import productRouter from './src/routes/productRoute.js';
 
 
 app.use(express.json());
@@ -12,6 +13,7 @@ app.use(express.urlencoded({extended:true}));
 app.use("/api/v1", roleRouter);
 app.use("/api/v1", adminRouter)
 app.use("/api/v1", userRouter)
+app.use("/api/v1", productRouter)
 
 app.get('/', function(req, res) {
   res.send('Welcome')
