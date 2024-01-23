@@ -9,7 +9,6 @@ import {
 import envconfig from "../config/envConfig.js";
 import Role from "../models/roleModel.js";
 import transporter from "../middleware/emailConfig.js";
-// import transporter from "../middleware/emailConfig.js";
 
 const userRegister = async (req, res) => {
   try {
